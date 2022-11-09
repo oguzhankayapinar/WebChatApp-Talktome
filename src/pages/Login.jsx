@@ -31,11 +31,11 @@ const Login = () => {
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />
-          <input type="password" placeholder="password" />
+          <input type="password" placeholder="Şifre" />
           <button>Sign in</button>
-          {err && <span>Something went wrong</span>}
+          {err && <span>Bir şeyler ters gitti</span>}
         </form>
-        <p>You don't have an account? <Link to="/register">Register</Link></p>
+        <p>Henüz bir hesabınız yok mu? <Link to="/register">Kayıt Ol</Link></p>
         <Link to="/Mobile"> <img className='appgoogle' src={appgoogle} alt="" />  </Link>
       </div>
     </div>
