@@ -28,7 +28,7 @@ const Login = () => {
        <img className='tel' src={tel1} alt=""/>
       <div className="formWrapper">
       <span className="logo"> <img src={logo1} alt=""/></span>
-        <span className="title">Login</span>
+        <span className="title">Giriş</span>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />
           <input type="password" placeholder="Şifre" />

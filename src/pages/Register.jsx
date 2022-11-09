@@ -64,7 +64,7 @@ const Register = () => {
     <div className="formContainer">
       <div className="formWrapper">
       <span className="logo"> <img src={logo1} alt=""/></span>
-        <span className="title">Register</span>
+        <span className="title">Üye Kaydı</span>
         <form onSubmit={handleSubmit}>
           <input required type="text" placeholder="Kullanıcı Adı" />
           <input required type="email" placeholder="email" />
@@ -74,12 +74,12 @@ const Register = () => {
             <img src={Add} alt="" />
             <span>Profil Fotoğrafı Ekle</span>
           </label>
-          <button disabled={loading}>Sign up</button>
-          {loading && "Uploading and compressing the image please wait..."}
-          {err && <span>Something went wrong</span>}
+          <button disabled={loading}>Üye Ol</button>
+          {loading && "SOHBET SAYFASINA YÖNLENDİRİLİYORSUNUZ"}
+          {err && <span>Bir şeyler ters gitti!</span>}
         </form>
         <p>
-          You do have an account? <Link to="/Login">Login</Link>
+          Bir hesabınız var mı? <Link to="/Login">Giriş Yap</Link>
         </p>
       </div>
     </div>
