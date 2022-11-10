@@ -15,16 +15,33 @@
 }
 
 .formContainer {
-  background-color: #319DA0;
+  background-image: radial-gradient(circle at 50% 50%, #008ded 0, #008af1 8.33%, #0087f4 16.67%, #0083f6 25%, #007ef5 33.33%, #0079f3 41.67%, #3774ef 50%, #606eea 58.33%, #7b67e3 66.67%, #9160da 75%, #a459d0 83.33%, #b351c6 91.67%, #c049ba 100%);
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 
+  .teldiv { 
+    margin-right: 44px;
   .tel{
-    height: 500px;;
+    height: 500px;
+    position: absolute;
+    margin-right: 30px;
 
   }
+  
+    .screen{
+      
+      height: 425px;
+      width: 240px;
+      margin-left: 59px;
+      margin-top: 30px;
+
+    }
+  
+  }
+
+  
 
   .formWrapper {
     background-color: white;
@@ -98,7 +115,7 @@
 }
 
 .home {
-  background-color: #319DA0;
+  background-image: radial-gradient(circle at 50% -20.71%, #ff9fff 0, #c787ff 25%, #8f6cd8 50%, #5c51a9 75%, #31397e 100%);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -106,9 +123,9 @@
 
   .container {
     border: none;
-    
-    width: 100%;
-    height: 100%;
+    border-radius: 10px;
+    width: 75%;
+    height: 85%;
     display: flex;
     overflow: hidden;
     @include tablet {
@@ -119,6 +136,9 @@
       flex: 1;
       background-color: #28376d;
       position: relative;
+      @include tablet {
+        width: 35%;
+       }
 
       .navbar {
         display: flex;
@@ -142,12 +162,17 @@
           align-items: center;
           gap: 10px;
           font-size: 15px;
+          text-shadow: 2px 2px 4px #319DA0;
+          @include tablet {
+            font-size: 12px;
+          }
 
           img {
             height: 40px;
             width: 40px;
             border-radius: 50%;
             object-fit: cover;
+            
           }
 
           button {
@@ -191,6 +216,10 @@
         gap: 10px;
         color: white;
         cursor: pointer;
+        @include tablet {
+          display: flex;
+          flex-direction: column;
+          text-align: center}
 
         &:hover {
           background-color: #1c2441;

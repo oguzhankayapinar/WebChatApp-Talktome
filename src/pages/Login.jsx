@@ -5,6 +5,8 @@ import { auth } from "../firebase";
 import logo1 from '../img/talktome.png'
 import tel1 from '../img/tel1.png'
 import appgoogle from '../img/appgoogle.png'
+import screen from '../img/screen.png'
+
 
 
 const Login = () => {
@@ -25,7 +27,9 @@ const Login = () => {
   };
   return (
     <div className="formContainer">
-       <img className='tel' src={tel1} alt=""/>
+      <div  className="teldiv">  <img className='tel' src={tel1} alt=""/>
+      <div><img className='screen' src={screen} alt=""/> </div>
+      </div>
       <div className="formWrapper">
       <span className="logo"> <img src={logo1} alt=""/></span>
         <span className="title">Giriş</span>
