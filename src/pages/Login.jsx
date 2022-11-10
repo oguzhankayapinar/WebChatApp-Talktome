@@ -30,9 +30,9 @@ const Login = () => {
       <span className="logo"> <img src={logo1} alt=""/></span>
         <span className="title">Giriş</span>
         <form onSubmit={handleSubmit}>
-          <input type="email" placeholder="email" />
+          <input type="email" placeholder="Email" />
           <input type="password" placeholder="Şifre" />
-          <button>Sign in</button>
+          <button>Giriş Yap</button>
           {err && <span>Bir şeyler ters gitti</span>}
         </form>
         <p>Henüz bir hesabınız yok mu? <Link to="/register">Kayıt Ol</Link></p>

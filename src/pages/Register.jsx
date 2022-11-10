@@ -67,7 +67,7 @@ const Register = () => {
         <span className="title">Üye Kaydı</span>
         <form onSubmit={handleSubmit}>
           <input required type="text" placeholder="Kullanıcı Adı" />
-          <input required type="email" placeholder="email" />
+          <input required type="email" placeholder="Email" />
           <input required type="password" placeholder="Şifre" />
           <input required style={{ display: "none" }} type="file" id="file" />
           <label htmlFor="file">

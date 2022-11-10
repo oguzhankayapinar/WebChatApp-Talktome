@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <span className="logo"> <img src={logo1} style={{ width: 150 }} alt="" /></span>
+      <span className="logo"> <img src={logo1} style={{ width: 160 }} alt="" /></span>
       <div className="user">
         <img src={currentUser.photoURL} alt="" />
         <span>{currentUser.displayName}</span>
