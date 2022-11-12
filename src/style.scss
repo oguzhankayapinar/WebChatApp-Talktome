@@ -15,7 +15,7 @@
 }
 
 .formContainer {
-  background-image: radial-gradient(circle at 50% 50%, #008ded 0, #008af1 8.33%, #0087f4 16.67%, #0083f6 25%, #007ef5 33.33%, #0079f3 41.67%, #3774ef 50%, #606eea 58.33%, #7b67e3 66.67%, #9160da 75%, #a459d0 83.33%, #b351c6 91.67%, #c049ba 100%);
+  background-image: linear-gradient(180deg, #9f90f4 0, #6c6cd8 50%, #274bbd 100%);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -23,6 +23,7 @@
 
   .teldiv { 
     margin-right: 44px;
+    margin-bottom: 20px;
   .tel{
     height: 500px;
     position: absolute;
@@ -45,7 +46,7 @@
 
   .formWrapper {
     background-color: white;
-    padding: 20px 60px;
+    padding: 10px 50px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -136,9 +137,7 @@
       flex: 1;
       background-color: #28376d;
       position: relative;
-      @include tablet {
-        width: 35%;
-       }
+     
 
       .navbar {
         display: flex;
@@ -194,6 +193,7 @@
 
         .searchForm {
           padding: 10px;
+          
 
           input {
             background-color: transparent;
@@ -201,6 +201,9 @@
             color: white;
             outline: none;
             width: 100%;
+            @include mobile {
+              font-size: 12px;
+              }
 
             &::placeholder {
               color: lightgray;
@@ -236,11 +239,18 @@
           span {
             font-size: 18px;
             font-weight: 500;
+            @include mobile {
+              font-size: 10px;
+              }
           }
           p {
             font-size: 14px;
             color: lightgray;
+            @include mobile {
+              font-size: 10px;
+              }
           }
+         
         }
       }
     }
@@ -255,6 +265,9 @@
         justify-content: space-between;
         padding: 10px;
         color: lightgray;
+        @include mobile {
+          font-size: 12px;
+          }
       }
 
       .chatIcons {
@@ -264,6 +277,9 @@
         img {
           height: 24px;
           cursor: pointer;
+          @include mobile {
+            height: 18px;
+            }
         }
       }
 
@@ -272,6 +288,9 @@
         padding: 10px;
         height: calc(100% - 160px);
         overflow: scroll;
+        @include mobile {
+          font-size: 10px;
+          }
 
         .message {
           display: flex;
@@ -305,7 +324,7 @@
             }
 
             img {
-              width: 50%;
+              width: 60%;
             }
           }
 
@@ -361,6 +380,9 @@
             color: white;
             background-color: #1f3177;
             border-radius: 10px;
+            @include mobile {
+              font-size: 10px;
+              }
 
             cursor: pointer;
           }
