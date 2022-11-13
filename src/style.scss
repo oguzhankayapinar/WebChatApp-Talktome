@@ -14,23 +14,61 @@
   }
 }
 
+.footer{
+  bottom: 0;
+  background:#319DA0;
+  opacity: 0.4;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  p{
+      color: white;
+    padding-bottom: 5px;
+    font-weight: bolder;
+    font-size: 15px
+    
+
+  };
+  .footer-icons{
+    .fa-brands{
+      margin-left: 10px;
+       color: white;
+       font-weight: 500;
+       font-size:25px ;
+
+       &:hover {
+        color: #1c2441;
+      }
+      };
+  };
+
+};
+
+
 .formContainer {
-  background-image: url(img/arka6.jpg);
-  opacity: 0.9;
+  background-image: url(img/arka8.jpg);
   background-size:cover;
-  background-position: center left;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: -20;
+  position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 
+  
   .teldiv { 
     margin-right: 44px;
     margin-bottom: 20px;
-    opacity: 0.9;
+    //opacity: 0.9;
   .tel{
     height: 500px;
     position: absolute;
@@ -48,12 +86,9 @@
     }
   
   }
-
-  
-
   .formWrapper {
     background-color: white;
-    opacity: 0.9;
+    opacity: 0.8;
     padding: 10px 50px;
     border-radius: 10px;
     display: flex;
@@ -231,7 +266,7 @@
         @include tablet {
           display: flex;
           flex-direction: column;
-          text-align: center}
+          text-align: center};
 
         &:hover {
           background-color: #1c2441;

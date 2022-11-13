@@ -6,6 +6,7 @@ import logo1 from '../img/talktome.png'
 import tel1 from '../img/tel1.png'
 import appgoogle from '../img/appgoogle.png'
 import screen from '../img/screen.png'
+import Footer from "../components/Footer";
 
 
 
@@ -42,6 +43,7 @@ const Login = () => {
         <p>Henüz bir hesabınız yok mu? <Link to="/register">Kayıt Ol</Link></p>
         <Link to="/Mobile"> <img className='appgoogle' src={appgoogle} alt="" />  </Link>
       </div>
+      <Footer/>
     </div>
   );
 };

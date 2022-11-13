@@ -6,6 +6,7 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
 import logo1 from '../img/talktome.png'
+import Footer from "../components/Footer";
 
 const Register = () => {
   const [err, setErr] = useState(false);
@@ -82,6 +83,7 @@ const Register = () => {
           Bir hesabınız var mı? <Link to="/Login">Giriş Yap</Link>
         </p>
       </div>
+      <Footer/>
     </div>
   );
 };
