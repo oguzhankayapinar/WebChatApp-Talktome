@@ -14,6 +14,35 @@
   }
 }
 
+.bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+  width: 45%;
+  padding: 40px 0;
+  text-align: center;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  background-color: rgba(0,0,0,0.3);
+  color: #fff;
+  font-weight: bold;
+  border: 10px inset #fff;
+  
+
+  p{
+    display: inline-block;
+    padding: 10px 50px;
+    border: 2px solid #fff;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    
+  }
+
+};
 .footer{
   bottom: 0;
   background:#319DA0;
@@ -26,6 +55,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;
 
 
   p{
@@ -34,14 +64,13 @@
     font-weight: bolder;
     font-size: 15px
     
-
   };
   .footer-icons{
     .fa-brands{
       margin-left: 10px;
        color: white;
        font-weight: 500;
-       font-size:25px ;
+       font-size:20px ;
 
        &:hover {
         color: #1c2441;
@@ -67,7 +96,7 @@
   
   .teldiv { 
     margin-right: 44px;
-    margin-bottom: 20px;
+    margin-bottom: 52px;
     //opacity: 0.9;
   .tel{
     height: 500px;
@@ -95,6 +124,7 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    margin-bottom: 35px;
 
     .logo {
       color: #5d5b8d;
