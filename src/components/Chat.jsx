@@ -5,6 +5,8 @@ import More from "../img/more.png";
 import Messages from "./Messages";
 import Input from "./Input";
 import { ChatContext } from "../context/ChatContext";
+import { auth } from "../firebase";
+import { signOut } from "firebase/auth";
 
 const Chat = () => {
   const { data } = useContext(ChatContext);
@@ -14,9 +16,9 @@ const Chat = () => {
       <div className="chatInfo">
         <span>{data.user?.displayName}</span>
         <div className="chatIcons">
-          <img src={Cam} alt="" />
-          <img src={Add} alt="" />
-          <img src={More} alt="" />
+         
+          
+          <button onClick={()=>signOut(auth)}>Çıkış Yap</button>
         </div>
       </div>
       <Messages />
