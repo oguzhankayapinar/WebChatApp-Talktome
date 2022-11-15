@@ -31,22 +31,7 @@ const Chats = () => {
   };
 
 
-  const user1 = auth.currentUser.uid;
-
-  useEffect(() => {
-    const usersRef = collection(db, "users");
-    // create query object
-    const q = query(usersRef, where("uid", "not-in", [user1]));
-    // execute query
-    const unsub = onSnapshot(q, (querySnapshot) => {
-      let users = [];
-      querySnapshot.forEach((doc) => {
-        users.push(doc.data());
-      });
-      setUsers(users);
-    });
-    return () => unsub();
-  }, []);
+ 
 
 
 
