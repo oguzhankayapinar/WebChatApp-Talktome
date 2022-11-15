@@ -39,6 +39,7 @@ const Search = () => {
     e.code === "Enter" && handleSearch();
   };
 
+  
   const handleSelect = async () => {
     //check whether the group(chats in firestore) exists, if not create
     const combinedId =
@@ -94,9 +95,10 @@ const Search = () => {
           <div className="userChatInfo">
             <span>{user.displayName}</span>
           </div>
+        
         </div>
       )}
-    </div>
+    </div>   
   );
 };
 

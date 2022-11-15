@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 
 
 
+
 const Login = () => {
   const [err, setErr] = useState(false);
   const navigate = useNavigate();
@@ -26,6 +27,7 @@ const Login = () => {
       setErr(true);
     }
   };
+
   return (
     <div className="formContainer">
       <div  className="teldiv">  <img className='tel' src={tel1} alt=""/>
