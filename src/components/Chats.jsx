@@ -1,12 +1,11 @@
-import {  collection, doc, onSnapshot, query, where } from "firebase/firestore";
+import {  doc, onSnapshot,  } from "firebase/firestore";
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { ChatContext } from "../context/ChatContext";
-import {  auth, db } from "../firebase";
+import {   db } from "../firebase";
 
 const Chats = () => {
   const [chats, setChats] = useState([]);
-  const [users, setUsers] = useState([]);
 
   const { currentUser } = useContext(AuthContext);
   const { dispatch } = useContext(ChatContext);
@@ -30,20 +29,7 @@ const Chats = () => {
     dispatch({ type: "CHANGE_USER", payload: u });
   };
 
-  useEffect(() => {
-    const usersRef = collection(db, "users");
-    // create query object
-    const q = query(usersRef, where("uid", "not-in", [auth.currentUser.uid]));
-    // execute query
-    const unsub = onSnapshot(q, (querySnapshot) => {
-      let users = [];
-      querySnapshot.forEach((doc) => {
-        users.push(doc.data());
-      });
-      setUsers(users);
-    });
-    return () => unsub();
-  }, []);
+ 
  
 
 
@@ -63,8 +49,6 @@ const Chats = () => {
           <div className="userChatInfo">
             <span>{chat[1].userInfo.displayName}</span>
             <p>{chat[1].lastMessage?.text}</p>
-            <div className={`userStatus ${users.isOnline ? 'online': 'offline'}`} > </div>
-
           </div>
 
         </div>
