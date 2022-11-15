@@ -3,7 +3,7 @@
 
 <h1 align="center"> 👋 Kodluyoruz Bootcamp Final Project</h1>
 <h3 align="center">This repo is a React Bootcamp final project.</h3>
-<h2  align="center"> <a href="https://kodluyoruztalktome.netlify.app/login"> Talk to me </a> </h2>
+<h2  align="center"> <a href="https://kodluyoruztalktome.netlify.app/Login"> Talktome </a> </h2>
 
 <h3 align="center">Screenshots</h3>
 
