@@ -6,7 +6,7 @@ import {  db } from "../firebase";
 
 const Chats = () => {
   const [chats, setChats] = useState([]);
-  const users = [];
+  const user = [];
 
   const { currentUser } = useContext(AuthContext);
   const { dispatch } = useContext(ChatContext);
@@ -50,7 +50,7 @@ const Chats = () => {
           <div className="userChatInfo">
             <span>{chat[1].userInfo.displayName}</span>
             <p>{chat[1].lastMessage?.text}</p>
-            <div className={`userStatus ${users.isOnline ?'online': 'offline' } `} > </div>
+            <div className={`userStatus ${user.isOnline ? 'online': 'offline'}`} > </div>
 
           </div>
 
