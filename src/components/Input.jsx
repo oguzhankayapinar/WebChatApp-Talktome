@@ -13,10 +13,13 @@ import {
 import { db, storage } from "../firebase";
 import { v4 as uuid } from "uuid";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
+import { useTranslation } from "react-i18next";
+
 
 const Input = () => {
   const [text, setText] = useState("");
   const [img, setImg] = useState(null);
+  const { t } = useTranslation();
 
   const { currentUser } = useContext(AuthContext);
   const { data } = useContext(ChatContext);
@@ -77,7 +80,7 @@ const Input = () => {
     <div className="input">
       <input
         type="text"
-        placeholder="Bir şeyler yaz"
+        placeholder={t("placeholder_input")}
         onChange={(e) => setText(e.target.value)}
         value={text}
       />
@@ -92,7 +95,7 @@ const Input = () => {
         <label htmlFor="file">
           <img src={Img} alt="" />
         </label>
-        <button onClick={handleSend}>Gönder</button>
+        <button onClick={handleSend}>{t("send")}</button>
       </div>
     </div>
   );

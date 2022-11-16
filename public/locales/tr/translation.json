@@ -1,0 +1,22 @@
+{
+  "send": "Gönder",
+  "placeholder_input": "Bir şeyler yaz...",
+  "search_error": "Kullanıcı bulunamadı!",
+  "placeholder_search": "Kullanıcı ara",
+  "login": "Giriş",
+  "err": "Bir şeyler ters gitti!",
+  "not_account": "Henüz bir hesabınız yok mu?",
+  "register": "Üye Kaydı",
+  "user_name": "Kullanıcı adı",
+  "password": "Şifre",
+  "prof_pic": "Profil Fotoğrafı Ekle",
+  "have_account": "Bir hesabınız var mı?",
+  "sign_in": "Giriş Yap",
+  "sign_up": "Kayıt Ol",
+  "loging":"SOHBET SAYFASINA YÖNLENDİRİLİYORSUNUZ",
+  "logout": "Çıkış Yap",
+  "pagehome": "Ana Sayfaya Geri Dön",
+  "mobile": "MOBİL UYGULAMAMIZ ÇOK YAKINDA",
+  "change_language": "Dil Değiştir",
+  "sosmes": "Sosyal medya hesaplarımızı takip edebilirsiniz."
+}

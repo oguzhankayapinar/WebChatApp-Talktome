@@ -14,6 +14,8 @@
   }
 }
 
+
+
 .bg-text {
   position: absolute;
   top: 50%;
@@ -29,6 +31,10 @@
   color: #fff;
   font-weight: bold;
   border: 10px inset #fff;
+
+  
+
+  
 
   p{
     display: inline-block;
@@ -56,7 +62,7 @@
   bottom: 0px;
   left: 0px;
   width: 100%;
-  padding:10px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,6 +89,11 @@
       };
   };
 
+  .langbut{
+    display: flex;
+    flex-direction: row
+  }
+
 };
 
 
@@ -97,6 +108,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .language {
+   
+    width: auto;
+    height: 30px;
+    
+    cursor: pointer;
+   
+    background-color: "transparent";
+      border: "none";
+    color: white;
+    background-color: transparent;
+    &:hover {
+      color: #1c2441;
+    }
+    
+  }
 
   
   .teldiv { 
@@ -120,6 +148,8 @@
     }
   
   }
+
+  
   .formWrapper {
     background-color: white;
     opacity: 0.8;
@@ -323,18 +353,6 @@
           }
          
         }
-      .userStatus{
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-      }
-      .online{
-        background-color: green;
-      }
-      .offline{
-        background-color: red;
-      }
-
       }
     }
     .chat {
@@ -368,7 +386,7 @@
           background-color: #1c2441;
           color: #ddddf7;
           font-size: 12px;
-          border: none;
+          
           border-radius: 10px;
           text-align: center;
           cursor: pointer;
@@ -376,7 +394,10 @@
             background-color: antiquewhite;
             color: #1c2441;
           }
-        
+          @include tablet {
+            position: absolute;
+            bottom: 10px;
+          }
         }
 
 
@@ -470,11 +491,12 @@
 
           img {
             height: 24px;
+            font-weight: 600;
             cursor: pointer;
           }
 
           button {
-            border: none;
+            
             padding: 10px 15px;
             color: white;
             background-color: #1f3177;
@@ -482,8 +504,10 @@
             @include mobile {
               font-size: 10px;
               }
-
             cursor: pointer;
+            &:hover {
+             background-color:#212a4d;
+            }
           }
         }
       }

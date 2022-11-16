@@ -1,0 +1,22 @@
+{
+  "send": "Send",
+  "placeholder_input": "Type something...",
+  "search_error": "User not found!",
+  "placeholder_search": "Search a user",
+  "login": "Login",
+  "err": "Something went wrong!",
+  "not_account": "You don't have an account?",
+  "register": "Register",
+  "user_name": "Username",
+  "password": "Password",
+  "prof_pic": "Add Profile Photo",
+  "have_account": "You do have an account?",
+  "sign_in": "Sign In",
+  "sign_up": "Sign Up",
+  "loging":"YOU ARE REDIRECTED TO THE CHAT PAGE",
+  "logout": "Logout",
+  "pagehome": "Back to Home Page",
+  "mobile": " MOBILE APPLICATION IS COMING SOON",
+  "change_language": "Change Language",
+  "sosmes": "You can follow our social media accounts."
+}

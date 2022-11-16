@@ -7,11 +7,14 @@ import { doc, setDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
 import logo1 from '../img/talktome.png'
 import Footer from "../components/Footer";
+import { useTranslation } from "react-i18next";
+
 
 const Register = () => {
   const [err, setErr] = useState(false);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleSubmit = async (e) => {
     setLoading(true);
@@ -64,24 +67,25 @@ const Register = () => {
 
   return (
     <div className="formContainer">
+    
       <div className="formWrapper">
       <span className="logo"> <img src={logo1} alt=""/></span>
-        <span className="title">Üye Kaydı</span>
+        <span className="title">{t("register")}</span>
         <form onSubmit={handleSubmit}>
-          <input required type="text" placeholder="Kullanıcı Adı" />
+          <input required type="text" placeholder={t("user_name")} />
           <input required type="email" placeholder="Email" />
-          <input required type="password" placeholder="Şifre" />
+          <input required type="password" placeholder={t("password")} />
           <input required style={{ display: "none" }} type="file" id="file" />
           <label htmlFor="file">
             <img src={Add} alt="" />
-            <span>Profil Fotoğrafı Ekle</span>
+            <span>{t("prof_pic")}</span>
           </label>
-          <button disabled={loading}>Üye Ol</button>
-          {loading && "SOHBET SAYFASINA YÖNLENDİRİLİYORSUNUZ"}
-          {err && <span>Bir şeyler ters gitti!</span>}
+          <button disabled={loading}>{t("sign_up")}</button>
+          {loading && <span>{t("loging")} </span>}
+          {err && <span>{t("err")}</span>}
         </form>
         <p>
-          Bir hesabınız var mı? <Link to="/Login">Giriş Yap</Link>
+        {t("have_account")} <Link to="/Login">{t("login")}</Link>
         </p>
       </div>
       <Footer/>
