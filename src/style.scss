@@ -387,7 +387,7 @@
           background-color: #1c2441;
           color: #ddddf7;
           font-size: 12px;
-          
+          border: "1px solid";
           border-radius: 10px;
           text-align: center;
           cursor: pointer;
@@ -502,6 +502,7 @@
             color: white;
             background-color: #1f3177;
             border-radius: 10px;
+            border: "1px solid";
             @include mobile {
               font-size: 10px;
               }
