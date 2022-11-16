@@ -113,11 +113,12 @@
    
     width: auto;
     height: 30px;
-    
+    border: "1px solid";
+    border-radius: 10px;
     cursor: pointer;
    
     background-color: "transparent";
-      border: "none";
+      
     color: white;
     background-color: transparent;
     &:hover {
@@ -129,7 +130,7 @@
   
   .teldiv { 
     margin-right: 44px;
-    margin-bottom: 60px;
+    margin-bottom: 75px;
     //opacity: 0.9;
   .tel{
     height: 500px;
@@ -159,7 +160,7 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 
     .logo {
       color: #5d5b8d;
